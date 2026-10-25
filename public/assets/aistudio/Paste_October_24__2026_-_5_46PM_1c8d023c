@@ -1,0 +1,917 @@
+# BUILD KHULABIZ — A COMPETITION-READY SOUTH AFRICAN SMALL-BUSINESS APP
+
+## 1. YOUR ROLE AND OBJECTIVE
+
+Act as a senior product designer, full-stack software engineer, AI engineer, UX researcher, cybersecurity specialist, and startup product strategist.
+
+Build a complete, working, mobile-first web application called **KhulaBiz** for the FNB App of the Year Hackathon 2026.
+
+Do not create a static website, a landing page pretending to be an app, or a collection of attractive but non-functional screens. Build a usable application with real interactions, persistent data, working forms, meaningful calculations, dashboards, and an intelligence layer that analyses business activity.
+
+The project must be suitable for a live demonstration to hackathon judges and must be capable of being deployed publicly so judges can test it.
+
+Use the following challenge as the foundation:
+
+**Challenge: Youth entrepreneurship and small-business growth**
+
+Problem statement: How might digital tools help young founders and township or rural businesses start, trade, get paid, manage cash flow, and reach formal markets?
+
+The app must be designed specifically for South African microbusinesses, including spaza shops, informal retailers, home-based businesses, small food businesses, independent service providers, student entrepreneurs, and rural traders.
+
+The core product promise is:
+
+**"Know your numbers. Spot your next move. Grow your business."**
+
+The app should feel like a product that could become a real South African business, not a hackathon assignment.
+
+## 2. PRODUCT VISION AND DIFFERENTIATION
+
+KhulaBiz is a simple business companion that converts everyday sales, expenses, stock movements, and customer orders into useful decisions.
+
+Many small business owners do not have time, money, or specialist knowledge for complicated accounting software. They need to know:
+
+- How much money did I make today?
+- How much did I spend?
+- Which products are selling?
+- Which products might run out soon?
+- Can I afford to restock?
+- Could I run short of cash next week?
+- What should I do next to grow my business?
+- How can I present my business professionally to potential buyers, partners, or funders?
+
+KhulaBiz should answer these questions in straightforward language.
+
+Its differentiator is a **Business Pulse intelligence system** that connects bookkeeping, stock management, cash-flow forecasting, and actionable recommendations in one accessible interface.
+
+Do not claim the app guarantees profits, provides loans, approves funding, or replaces professional accounting advice.
+
+Do not claim partnerships with FNB, government departments, funders, suppliers, or payment providers unless an actual integration or partnership exists.
+
+Clearly identify demo data as demonstration data.
+
+## 3. TARGET USERS AND USER EXPERIENCE
+
+Primary users:
+
+1. Young South African entrepreneurs starting their first business.
+2. Rural and township business owners.
+3. Informal retailers and small shops.
+4. Food sellers, home businesses, and independent service providers.
+5. Small businesses preparing to approach suppliers, partners, or funders.
+
+Design for users who may have limited accounting knowledge, use entry-level smartphones, have inconsistent connectivity, and prefer clear, simple language.
+
+The interface must be mobile-first, responsive, accessible, and fast.
+
+Use South African rand (ZAR), formatted like R1,250.00. Use South African business examples, realistic local product names, and appropriate South African date formatting.
+
+Avoid unnecessary jargon. Explain financial terms in plain language.
+
+## 4. VISUAL DESIGN DIRECTION
+
+Create a polished, modern financial-technology product.
+
+Visual style:
+- Premium, clean, trustworthy, and practical.
+- Deep forest green or emerald as the primary brand colour.
+- Warm white and light neutral backgrounds.
+- Dark charcoal text.
+- A restrained mint accent for positive trends.
+- Amber for warnings.
+- Red only for important errors or critical risks.
+- Rounded cards, subtle borders, clean typography, and generous spacing.
+- Professional charts, clear status indicators, and excellent empty states.
+- Lucide icons or another consistent icon set.
+
+Create a distinctive KhulaBiz wordmark using typography and a simple growth-inspired symbol. Do not imitate FNB's logo, branding, or visual identity.
+
+Use a consistent design system for buttons, forms, cards, navigation, tables, charts, modals, alerts, and loading states.
+
+The desktop experience should have a compact left navigation sidebar and a main content area. On mobile, use a compact header and bottom navigation with clearly labelled primary destinations.
+
+Avoid excessive gradients, unnecessary animations, generic AI illustrations, clutter, and oversized marketing sections inside the authenticated app.
+
+Every page must look finished, including loading, empty, error, and success states.
+
+## 5. TECHNOLOGY AND ARCHITECTURE
+
+Use the existing Lovable project if one exists. Inspect the project first and preserve working functionality.
+
+Preferred stack:
+- React and TypeScript.
+- Tailwind CSS.
+- Reusable, accessible UI components.
+- Supabase for PostgreSQL database, authentication, and server-side functions where supported.
+- A suitable charting library for business analytics.
+- Server-side validation and secure database access.
+- GitHub integration for source control.
+
+Use the platform's supported tooling where the exact preferred package is unavailable.
+
+Do not expose secret keys, service-role credentials, private API tokens, or sensitive configuration in client-side code.
+
+If Supabase credentials have not been configured, clearly explain what needs to be connected. Do not pretend that persistent cloud storage or authentication is working when it is not.
+
+Use database migrations or an equivalent documented schema. Implement Row Level Security for user-owned business data.
+
+Keep the code modular, typed, maintainable, and easy to extend.
+
+## 6. AUTHENTICATION AND ONBOARDING
+
+Implement a working authentication flow.
+
+Include:
+- Sign-up.
+- Login.
+- Logout.
+- Session persistence.
+- Password reset where supported.
+- Clear authentication errors and success messages.
+- Protected business dashboard routes.
+
+Create a short onboarding wizard.
+
+Step 1: Welcome to KhulaBiz.
+
+Step 2: Ask for business name, business type, town or city, and province.
+
+Step 3: Ask whether the business sells products, services, or both.
+
+Step 4: Ask for an optional starting cash balance.
+
+Step 5: Ask whether the user wants to load sample products and example transactions.
+
+Step 6: Create the business workspace and show the dashboard.
+
+Allow the user to skip optional questions.
+
+Never require a bank account, national ID number, or unnecessary sensitive personal information to use the core application.
+
+Provide a clearly labelled demo mode so judges can explore the app without needing to register using their personal details. Use a dedicated demo environment or demo account with safe sample data. Clearly distinguish demo mode from real user accounts.
+
+Do not silently expose a shared demo account's sensitive data. Provide a safe reset mechanism for demo data if needed.
+
+## 7. APPLICATION NAVIGATION
+
+Create the following functional sections:
+
+1. Overview
+2. Sales
+3. Expenses
+4. Products and Stock
+5. Customers and Orders
+6. Business Pulse
+7. Growth Plan
+8. Business Profile
+9. Settings
+
+Use clear labels and make the most important action accessible within one or two taps on mobile.
+
+Include a persistent "Quick Add" action for recording a sale or expense.
+
+Do not add pages that exist only to increase feature count. Every section must have a purpose and working functionality.
+
+## 8. DASHBOARD — THE BUSINESS COMMAND CENTRE
+
+Build a useful overview screen with a clear hierarchy.
+
+At the top:
+- Business name.
+- Current date.
+- Greeting.
+- A compact indicator showing whether the business has enough recorded data for reliable insights.
+- Quick actions for recording a sale, adding an expense, and updating stock.
+
+Display these key metrics:
+
+A. Sales today.
+
+B. Total recorded expenses today.
+
+C. Estimated gross profit for the selected period, based on recorded sales and product costs where available.
+
+D. Cash balance estimate, calculated from the starting balance and recorded cash inflows and outflows.
+
+E. Products that are low in stock.
+
+F. Outstanding customer payments, where applicable.
+
+G. Sales trend over the last seven and thirty days.
+
+H. A Business Pulse summary with the most important current recommendation.
+
+All figures must be derived from actual database records or clearly labelled demo data. Do not hardcode dashboard figures as though they are live.
+
+Allow date-range filtering.
+
+When no transactions exist, display a helpful empty state and an obvious button to record the first sale.
+
+Use charts that explain their data clearly. Include labels, accessible tooltips, sensible scales, and mobile-friendly layouts.
+
+Distinguish revenue from profit and cash balance. Never label sales revenue as profit.
+
+## 9. SALES MANAGEMENT
+
+Implement a complete sales workflow.
+
+The user should be able to:
+- Record a new sale.
+- Add one or more products or services.
+- Specify quantity and selling price.
+- Apply an optional discount.
+- Select payment status: paid, partially paid, or unpaid.
+- Select payment method: cash, EFT, card, or other.
+- Record a transaction date.
+- Add an optional customer.
+- Add an optional note.
+- Save the transaction.
+- View a transaction receipt or summary.
+- Edit or void a transaction with a recorded reason and appropriate permissions.
+- Search and filter past sales.
+- View sale details.
+- Export a CSV of permitted sales records.
+
+Calculate totals automatically and validate quantities and prices.
+
+When a sale includes tracked inventory, decrease stock appropriately. Avoid deducting inventory twice if a sale is edited.
+
+Record changes in an audit trail.
+
+Support appropriate payment-status changes without treating an unpaid invoice as cash already received.
+
+## 10. EXPENSE MANAGEMENT
+
+Build a working expense tracker.
+
+Fields:
+- Description.
+- Amount.
+- Category.
+- Date.
+- Payment method.
+- Optional supplier.
+- Optional note.
+- Optional receipt attachment if supported by the storage setup.
+
+Suggested categories:
+- Stock purchases.
+- Transport.
+- Electricity and utilities.
+- Rent.
+- Data and connectivity.
+- Packaging.
+- Equipment.
+- Marketing.
+- Staff and labour.
+- Other.
+
+Features:
+- Add expenses.
+- Edit or void expenses with an audit trail.
+- Filter by category and date.
+- Display totals by period.
+- Compare expenses with sales.
+- Export records to CSV.
+
+Validate that monetary values are positive and valid.
+
+Explain that an expense recorded in the app is a user-entered record, not independently verified bank activity.
+
+Do not claim automatic bank synchronisation unless a real integration exists.
+
+## 11. PRODUCTS AND STOCK MANAGEMENT
+
+Create a complete inventory module.
+
+Each product should have:
+- Product name.
+- Optional description.
+- SKU or reference code.
+- Category.
+- Selling price.
+- Unit cost.
+- Current quantity.
+- Low-stock threshold.
+- Optional supplier.
+- Active or archived status.
+
+Features:
+- Create, edit, search, and archive products.
+- Update stock through explicit stock adjustments.
+- Record the reason for adjustments.
+- Track stock movements.
+- Calculate estimated stock value using recorded unit costs.
+- Show low-stock and out-of-stock alerts.
+- Identify products with high recorded sales.
+- Identify products that have not sold during a selected period, when sufficient records exist.
+
+Stock must update consistently when sales are created, edited, or voided.
+
+Prevent accidental negative stock unless an explicit, clearly explained setting permits it.
+
+Show a suggested reorder quantity based on recent sales and user-defined minimum stock levels.
+
+Do not invent supplier prices or claim suppliers have confirmed stock availability.
+
+## 12. CUSTOMERS, ORDERS, AND DIGITAL CATALOGUE
+
+Create a lightweight customer and order management module.
+
+Customers may have:
+- Name or business name.
+- Optional contact details.
+- Optional notes.
+- Transaction and order history.
+
+Collect only necessary customer information.
+
+Orders should support:
+- Product or service line items.
+- Quantities.
+- Order total.
+- Order status: new, confirmed, in progress, completed, or cancelled.
+- Payment status.
+- Order date.
+- Optional delivery or collection notes.
+
+Allow the business owner to create a shareable public business profile.
+
+The public profile should contain:
+- Business name.
+- Short description.
+- Category.
+- General service area.
+- Products or services.
+- Publicly approved contact details.
+- A clear enquiry action.
+
+Never expose internal financial information, private customer records, authentication data, or business analytics on the public page.
+
+Where feasible, implement a shareable catalogue URL with a unique public identifier.
+
+Do not claim the app processes real payments. The catalogue and enquiry workflow must work without a payment gateway.
+
+## 13. BUSINESS PULSE — THE CORE INTELLIGENCE FEATURE
+
+This is the signature feature of KhulaBiz. It must be useful, understandable, testable, and based on the user's recorded business data.
+
+Do not merely add a chatbot and call the product intelligent.
+
+Create a Business Pulse engine that analyses sales, expenses, stock movements, receivables, and transaction history to produce recommendations.
+
+Each insight must include:
+- A clear title.
+- What the system detected.
+- Evidence from the user's records.
+- Why it matters.
+- A suggested action.
+- An estimated confidence or reliability indicator.
+- A link to the relevant screen or action.
+
+Implement at least the following intelligence features.
+
+### A. Low-stock prediction
+
+Estimate when a product could run out using recent sales velocity and available stock.
+
+Example:
+"Cooking oil may run out in approximately 4 days at the recent sales rate."
+
+Display the assumptions and the amount of historical data used.
+
+If the product has insufficient sales history, say so and use the configured minimum stock threshold instead.
+
+### B. Sales trend detection
+
+Compare the selected period with an appropriate previous period.
+
+Identify products or days with rising or falling sales.
+
+Example:
+"Recorded bread sales were 18% higher this week than last week."
+
+Only generate this insight when there is sufficient data. Display the underlying dates and totals.
+
+### C. Cash-flow warning
+
+Use recorded starting balance, paid sales, received payments, and recorded cash expenses to estimate cash availability.
+
+Use historical averages to estimate short-term inflows and outflows when enough data exists.
+
+Flag possible cash shortages and explain which assumptions contribute to the forecast.
+
+Do not treat unpaid invoices as money already received.
+
+Clearly label forecasts as estimates rather than guarantees.
+
+### D. Restocking recommendation
+
+Rank products by urgency using current stock, sales velocity, and minimum stock thresholds.
+
+Show the reason for each recommendation.
+
+Where unit costs are available, estimate the restocking cost. If costs are missing, state that the estimate cannot be calculated reliably.
+
+### E. Business health indicators
+
+Create a transparent Business Health indicator using a documented rule-based formula.
+
+Potential components:
+- Sales consistency.
+- Gross margin data completeness and trend.
+- Stock risk.
+- Expense trends.
+- Cash-flow risk.
+- Record-keeping completeness.
+
+Show the component results and explain how the indicator is calculated.
+
+Do not imply that this score is an official credit score, financial rating, or funding decision.
+
+### F. Actionable daily recommendations
+
+Provide a small number of ranked actions, such as:
+- Record missing expenses.
+- Follow up on unpaid customer orders.
+- Restock a fast-selling item.
+- Review a product with a falling margin.
+- Compare sales for the current and previous week.
+
+Every recommendation must be based on recorded facts or be clearly labelled as a general suggestion.
+
+### G. Data sufficiency
+
+The system must recognise when there is insufficient information.
+
+Do not invent trends from a handful of transactions.
+
+Show messages such as:
+"Record sales for at least several days to unlock more reliable trend insights."
+
+Allow the user to inspect the data behind each insight.
+
+### H. Intelligence implementation
+
+First implement transparent, deterministic analytical functions in the application or a secure server-side environment.
+
+If a real AI model integration is configured, use it to explain verified analytical results in plain language and suggest appropriate next actions.
+
+Never send secrets to the browser.
+
+If no AI provider is configured, the app must still deliver working Business Pulse features through the rule-based analytical engine.
+
+Do not display fake AI responses, fake integrations, or an endlessly loading "AI is thinking" animation.
+
+Clearly distinguish computed findings from AI-generated explanations.
+
+## 14. GROWTH PLAN AND FUNDING READINESS
+
+Create a practical section that helps business owners prepare for growth.
+
+Include:
+- Business profile completeness.
+- Record-keeping completeness.
+- Sales and expense history.
+- Product cost information.
+- Customer and order records.
+- Basic business goals.
+- Funding-readiness checklist.
+- Documents the owner may need to prepare independently.
+- A simple monthly growth plan.
+
+Allow users to choose a goal, such as increasing sales, improving margins, reducing stock shortages, or building more consistent records.
+
+Generate a list of practical steps based on the user's selected goal and recorded data.
+
+Allow users to mark steps as complete.
+
+The funding-readiness checklist must not claim that a business qualifies for funding or that any funder has endorsed the application.
+
+Do not invent grants, loan terms, interest rates, or approval probabilities.
+
+## 15. BUSINESS PROFILE AND GROWTH TOOLS
+
+Let the owner edit:
+- Business name.
+- Business type.
+- General location.
+- Description.
+- Contact details.
+- Products and services offered.
+- Business goals.
+
+Provide a professional public profile preview.
+
+Offer CSV exports for business records.
+
+Where feasible, provide a printable monthly business summary showing recorded revenue, expenses, estimated gross profit where costs are known, outstanding payments, and stock information.
+
+Include a disclaimer that the summary is based on records entered into KhulaBiz and is not an audited financial statement.
+
+## 16. DEMO DATA AND DEMONSTRATION MODE
+
+A hackathon judge must be able to understand the value of the app within the first two minutes.
+
+Create a realistic sample business called "Thabo's Corner Store" or another clearly fictional South African small business.
+
+Include plausible demo products such as bread, milk, cooking oil, rice, maize meal, and household essentials.
+
+Populate the demo environment with enough dated transactions and stock movements to demonstrate:
+- Dashboard analytics.
+- Sales and expense tracking.
+- Stock deduction.
+- Low-stock detection.
+- Sales trends.
+- Cash-flow estimates.
+- Business Pulse recommendations.
+- Customer orders.
+- Growth-plan actions.
+
+Use consistent dates, quantities, selling prices, unit costs, stock movements, and payment statuses.
+
+Do not use random numbers that contradict one another.
+
+All sample data must be clearly labelled as fictional demo data.
+
+Make the demo self-explanatory. Add a short guided tour or a "Try the demo" action.
+
+Do not require judges to enter personal information or configure third-party accounts to see the core experience.
+
+Provide a reset-demo-data action that restores the original sample data safely.
+
+The demo must be reproducible: reloading the app must not silently destroy a judge's progress or generate inconsistent totals.
+
+## 17. DATABASE DESIGN
+
+Create a documented relational schema.
+
+Include suitable tables for:
+- Profiles.
+- Businesses.
+- Business membership or ownership.
+- Products.
+- Sales.
+- Sale line items.
+- Expenses.
+- Customers.
+- Orders.
+- Order line items.
+- Stock movements.
+- Business goals.
+- Growth-plan actions.
+- Business insights.
+- Audit events.
+
+Include appropriate:
+- Primary keys.
+- Foreign keys.
+- Timestamps.
+- Numeric types suitable for monetary values.
+- Data validation constraints.
+- Indexes for common queries.
+- Ownership relationships.
+- Row Level Security policies.
+
+Store monetary amounts using appropriate fixed-precision decimal or integer-minor-unit representations. Avoid floating-point arithmetic for financial calculations.
+
+Make all queries scoped to the authenticated user's permitted business.
+
+Prevent one user from accessing another user's business records.
+
+Use server-side or database-side enforcement for sensitive permissions, not just hidden UI elements.
+
+Avoid unnecessary duplication of financial totals. Where derived totals are stored for performance, keep them consistent with their source records.
+
+Document how the schema and demo data are created.
+
+## 18. SECURITY, PRIVACY, AND RESPONSIBLE DESIGN
+
+Apply secure development practices throughout the app.
+
+Requirements:
+- Validate and sanitise all user input.
+- Enforce authentication and authorisation.
+- Use secure database access policies.
+- Keep secrets out of client-side code.
+- Avoid exposing private financial records in public catalogue pages.
+- Use appropriate session handling.
+- Handle failed requests safely.
+- Prevent duplicate submissions where possible.
+- Require confirmation for destructive actions.
+- Record important financial changes in an audit trail.
+- Restrict file uploads by type and size if attachments are implemented.
+- Avoid collecting sensitive information that is unnecessary for the product.
+- Provide a basic privacy notice.
+- Provide a way to delete or export a user's own data where appropriate.
+- Avoid logging passwords, tokens, or private transaction details.
+
+Create a short Security and Secure Development Lifecycle (SSDLC) document for the submission.
+
+It must describe:
+1. What data the app collects.
+2. Where data is stored.
+3. Authentication and authorisation.
+4. Database access policies.
+5. Input validation.
+6. Handling of secrets.
+7. Main threats and mitigations.
+8. Testing performed.
+9. Remaining security limitations.
+
+Do not claim the application has passed a professional penetration test unless one has actually been performed.
+
+## 19. ACCESSIBILITY, LOW-DATA USE, AND RESILIENCE
+
+Make the app usable on a typical smartphone with a small screen.
+
+Implement:
+- Readable text sizes.
+- Sufficient colour contrast.
+- Keyboard accessibility.
+- Accessible form labels.
+- Clear focus states.
+- Accessible error messages.
+- Meaningful chart labels.
+- Reduced-motion support.
+- Optimised images and assets.
+- Efficient data fetching.
+- Pagination or sensible limits for large lists.
+- Loading, retry, and error states.
+
+Do not make the app dependent on large animations or video backgrounds.
+
+If offline support is feasible within the available build time, add a carefully scoped offline-friendly experience for non-sensitive cached information. Clearly indicate when data is offline and when changes have not synced.
+
+Never imply that a transaction was saved to the server when it has only been stored locally.
+
+If full offline synchronisation is not implemented, keep the app reliable on low-bandwidth connections without claiming offline functionality.
+
+## 20. TESTING AND ACCEPTANCE REQUIREMENTS
+
+Do not consider the project complete just because the pages render.
+
+Verify the following end-to-end workflows.
+
+Test 1: A user can open the demo and view the dashboard.
+
+Test 2: A user can record a sale and see the dashboard update.
+
+Test 3: A sale containing tracked products decreases stock correctly.
+
+Test 4: A user can record an expense and see the cash-balance estimate update.
+
+Test 5: An unpaid sale is not treated as received cash.
+
+Test 6: Editing or voiding a sale does not deduct or restore stock incorrectly.
+
+Test 7: Low-stock recommendations reflect current stock and sales history.
+
+Test 8: Trend insights use actual dated transactions.
+
+Test 9: An empty business displays helpful onboarding rather than broken charts.
+
+Test 10: Users cannot access another business's private records.
+
+Test 11: The public business profile exposes only explicitly public information.
+
+Test 12: Forms validate required fields and invalid monetary amounts.
+
+Test 13: Navigation, filters, search, and primary buttons work on mobile and desktop.
+
+Test 14: Refreshing the application preserves saved data when using the configured persistent backend.
+
+Test 15: Error states are understandable and recoverable.
+
+Test 16: The demo reset restores consistent sample data.
+
+Fix discovered errors before declaring the build ready.
+
+Do not create buttons that do nothing. If a feature depends on an unavailable external service, show an honest setup message and provide a functional alternative where possible.
+
+## 21. JUDGING CRITERIA — DESIGN FOR ALL SEVEN
+
+Optimise the finished product around the exact seven judging criteria in the supplied FNB AOTY hackathon brief.
+
+### Product — 10 points
+
+Demonstrate a complete working workflow, persistent records, reliable calculations, responsive design, and a clear problem-solution fit.
+
+Prioritise correctness over the number of features.
+
+### Creativity — 10 points
+
+Make Business Pulse the signature innovation. Connect bookkeeping, inventory, and cash-flow data to useful next steps instead of merely displaying charts.
+
+Explain what makes the product different from a basic spreadsheet or generic accounting dashboard.
+
+### Usability — 10 points
+
+Keep the main workflows simple. A first-time user should be able to record a sale quickly and understand the dashboard without reading a manual.
+
+Use plain language and clear visual hierarchy.
+
+### Sustainability — 10 points
+
+Demonstrate a plausible business model.
+
+Possible options:
+- A free tier for very small businesses.
+- A paid tier for advanced analytics and multiple staff accounts.
+- Optional paid business reports or enhanced catalogue tools.
+- Partnerships with legitimate small-business support organisations, if pursued in future.
+
+Clearly label this as a proposed model. Do not claim existing paying customers or partnerships without evidence.
+
+### Impact — 10 points
+
+Explain how the product could reduce poor record-keeping, stock shortages, missed follow-ups, and uncertainty about cash flow.
+
+Use transparent demo scenarios to show how better information could help a small business owner make a more informed decision.
+
+Do not fabricate impact statistics or claim that the app has already improved real businesses.
+
+### Presentation — 10 points
+
+Make the user journey self-explanatory and visually coherent.
+
+Provide a concise in-app explanation of:
+- The target user.
+- The problem.
+- The solution.
+- The key innovation.
+- The intended impact.
+
+Include a demo account or demo mode and a clear route through the main features.
+
+### Intelligence — 10 points
+
+Implement real data-driven insights, forecasting, and recommendations.
+
+Show the inputs, assumptions, and evidence behind every major prediction.
+
+Use deterministic, testable calculations where appropriate, and clearly label estimates and uncertainty.
+
+Do not add a superficial chatbot as a substitute for intelligence.
+
+## 22. REQUIRED SUPPORTING DELIVERABLES
+
+In addition to the application, prepare supporting materials that can be reviewed and completed for the submission.
+
+### A. README
+
+Create a comprehensive README containing:
+- Product overview.
+- Problem statement.
+- Target audience.
+- Main features.
+- Technology stack.
+- Architecture overview.
+- Database schema summary.
+- Setup instructions.
+- Environment variables required, without including secret values.
+- How to run the app.
+- How to deploy it.
+- Demo instructions.
+- Testing instructions.
+- Current limitations.
+
+### B. Technical architecture
+
+Create a clear architecture diagram or diagram source showing:
+
+User / Mobile Browser → React Application → Authentication and API Layer → Supabase Database and Server-Side Functions → Business Pulse Analytics → Dashboard and Recommendations.
+
+Include public catalogue access and security boundaries.
+
+Only show integrations that have actually been implemented.
+
+### C. User journey
+
+Document this journey:
+
+1. A small business owner opens KhulaBiz.
+2. The owner creates a business profile or opens the demo.
+3. The owner records a sale.
+4. Stock and financial summaries update.
+5. Business Pulse identifies a relevant risk or opportunity.
+6. The owner opens the recommendation and takes action.
+7. The owner reviews business progress over time.
+
+### D. Lean Business Canvas
+
+Prepare a Lean Business Canvas covering:
+- Problem.
+- Customer segments.
+- Unique value proposition.
+- Solution.
+- Channels.
+- Revenue streams.
+- Cost structure.
+- Key metrics.
+- Unfair advantage.
+
+Separate verified facts from assumptions that need validation.
+
+### E. Demo account instructions
+
+Document exactly how judges can access the app and explore the demo without encountering private user information.
+
+Do not invent login credentials. Use the actual configured demo access method.
+
+### F. Presentation deck outline
+
+Prepare a concise presentation structure containing:
+1. Problem.
+2. Target customer.
+3. Current alternatives and their limitations.
+4. KhulaBiz solution.
+5. Product screenshots and user journey.
+6. Business Pulse intelligence.
+7. Technical architecture and security.
+8. Business model and sustainability.
+9. Potential impact and how it will be measured.
+10. Roadmap and next steps.
+
+### G. Short pitch
+
+Draft a clear 20-second pitch explaining the customer problem, what KhulaBiz does, its unique intelligence feature, and why it matters.
+
+Do not claim unverified traction.
+
+### H. GitHub readiness
+
+Keep the source code organised and suitable for a GitHub repository.
+
+Include setup documentation and a sensible `.gitignore`.
+
+Do not commit environment secrets, private data, or credentials.
+
+If GitHub integration is available, connect it only through the authorised workflow. Otherwise provide the steps needed to publish the repository.
+
+## 23. BUILD PRIORITIES
+
+Build in this order.
+
+**Priority 1 — Working core product**
+- Authentication or safe demo access.
+- Database and persistence.
+- Business setup.
+- Sales.
+- Expenses.
+- Products and stock.
+- Dashboard calculations.
+
+**Priority 2 — Competitive differentiation**
+- Business Pulse.
+- Low-stock prediction.
+- Sales trends.
+- Cash-flow estimate.
+- Actionable recommendations.
+
+**Priority 3 — Business value**
+- Customers and orders.
+- Public business catalogue.
+- Growth Plan.
+- Funding-readiness checklist.
+
+**Priority 4 — Submission readiness**
+- Security checks.
+- Mobile testing.
+- Error handling.
+- Demo data consistency.
+- README.
+- Architecture.
+- Lean Business Canvas.
+- Pitch materials.
+
+If time is limited, complete and test the core workflows before adding optional features.
+
+## 24. FINAL BUILD INSTRUCTIONS
+
+Begin by inspecting the existing project and reporting any necessary configuration.
+
+Then implement the application in logical stages, checking that each stage works before proceeding.
+
+Do not stop after creating a plan, wireframe, landing page, or dashboard mockup.
+
+Do not replace functional backend operations with hardcoded frontend arrays.
+
+Do not invent customer traction, real financial data, funding approval, or external integrations.
+
+Do not hide unfinished functionality behind buttons that look operational.
+
+Use sensible defaults and make decisions independently where requirements are sufficiently clear.
+
+When a real service requires credentials, clearly state the exact configuration needed and continue building all other functionality that can be implemented safely.
+
+At the end, provide:
+1. A summary of what is genuinely implemented.
+2. A list of working features.
+3. A list of any features requiring external configuration.
+4. The live deployment URL once deployment is completed.
+5. The GitHub repository URL once created.
+6. Demo access instructions.
+7. Test results and unresolved issues.
+8. The remaining steps to prepare the submission.
+
+**The final standard:** KhulaBiz must look credible, work reliably, use real persisted data, demonstrate meaningful intelligence, address the specified South African small-business challenge, and be easy for a judge to understand and test. Build a complete, focused product rather than a collection of disconnected features.

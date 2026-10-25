@@ -1,0 +1,6 @@
+{
+  "name": "KhulaBiz - South African Small Business Companion",
+  "description": "Know your numbers, spot your next move, and grow your township or micro-business with intelligent cash-flow tracking, stock alerts, and growth planning.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

@@ -1,0 +1,1164 @@
+{
+  "users": [
+    {
+      "id": "usr_fnb_judge_01",
+      "name": "FNB Hackathon Judge",
+      "email": "judge@fnbhackathon2026.co.za",
+      "passwordHash": "2ba56d3d191d13afce1512648f79ee388e4ed82e00acef28168adaf5173ec3a564ca1e6a553eba6a1a5ad156434b552c4d57d8c5f49ecbefba2dbb8c7847f012",
+      "salt": "114ddca6748c01b8fc94ff65b428823a",
+      "businessId": "demo_thabo_corner_store",
+      "role": "judge",
+      "createdAt": "2026-10-24T06:00:00Z"
+    }
+  ],
+  "sessions": [
+    {
+      "token": "kb_sess_bf32fc906116d7949d2bd74fa50ad2da5cb440ece3663c4e85185405110d5626",
+      "userId": "usr_fnb_judge_01",
+      "businessId": "demo_thabo_corner_store",
+      "expiresAt": "2026-10-31T16:30:08.060Z",
+      "createdAt": "2026-10-24T16:30:08.060Z"
+    }
+  ],
+  "businesses": [
+    {
+      "id": "demo_thabo_corner_store",
+      "name": "Thabo's Corner Store",
+      "businessType": "Spaza & Convenience",
+      "townOrCity": "Orlando West, Soweto",
+      "province": "Gauteng",
+      "offerType": "both",
+      "currency": "ZAR",
+      "startingCashBalance": 4200,
+      "contactPhone": "+27 72 849 2011",
+      "contactEmail": "thabo@thaboscorner.co.za",
+      "address": "Corner Vilakazi & Moema Street, Orlando West, Soweto, 1804",
+      "description": "Your trusted neighborhood spaza shop providing daily groceries, fresh bread, cold drinks, mobile airtime, and friendly township hospitality since 2021.",
+      "publicCatalogueSlug": "thabos-corner-soweto",
+      "allowNegativeStock": false,
+      "createdAt": "2026-09-01T06:00:00Z",
+      "isDemo": true
+    }
+  ],
+  "products": [
+    {
+      "id": "prod_bread_white",
+      "businessId": "demo_thabo_corner_store",
+      "name": "Albany Superior White Bread 700g",
+      "description": "Fresh sliced white bread delivered daily from the bakery depot.",
+      "sku": "ALB-WHT-700",
+      "category": "Bakery & Staples",
+      "sellingPrice": 19.5,
+      "unitCost": 15,
+      "currentQuantity": 12,
+      "lowStockThreshold": 15,
+      "supplier": "Albany Bakery Depot Meadowlands",
+      "isArchived": false,
+      "createdAt": "2026-09-01T08:00:00Z",
+      "updatedAt": "2026-10-24T06:30:00Z"
+    },
+    {
+      "id": "prod_bread_brown",
+      "businessId": "demo_thabo_corner_store",
+      "name": "Blue Ribbon Brown Bread 700g",
+      "description": "High-fibre brown bread sliced fresh.",
+      "sku": "BR-BRN-700",
+      "category": "Bakery & Staples",
+      "sellingPrice": 18,
+      "unitCost": 13.8,
+      "currentQuantity": 18,
+      "lowStockThreshold": 12,
+      "supplier": "Blue Ribbon Distribution",
+      "isArchived": false,
+      "createdAt": "2026-09-01T08:00:00Z",
+      "updatedAt": "2026-10-24T06:30:00Z"
+    },
+    {
+      "id": "prod_oil_2l",
+      "businessId": "demo_thabo_corner_store",
+      "name": "Sunfoil Pure Sunflower Cooking Oil 2L",
+      "description": "Triple refined pure cooking oil in sturdy 2-litre bottle.",
+      "sku": "SNF-OIL-2L",
+      "category": "Pantry & Groceries",
+      "sellingPrice": 69.9,
+      "unitCost": 54,
+      "currentQuantity": 4,
+      "lowStockThreshold": 10,
+      "supplier": "Metro Cash & Carry Devland",
+      "isArchived": false,
+      "createdAt": "2026-09-01T08:00:00Z",
+      "updatedAt": "2026-10-23T16:00:00Z"
+    },
+    {
+      "id": "prod_maize_5kg",
+      "businessId": "demo_thabo_corner_store",
+      "name": "Iwisa Super Maize Meal 5kg",
+      "description": "Top grade South African super maize meal for pap.",
+      "sku": "IWS-MZ-5KG",
+      "category": "Pantry & Groceries",
+      "sellingPrice": 59,
+      "unitCost": 46.5,
+      "currentQuantity": 8,
+      "lowStockThreshold": 10,
+      "supplier": "Metro Cash & Carry Devland",
+      "isArchived": false,
+      "createdAt": "2026-09-01T08:00:00Z",
+      "updatedAt": "2026-10-22T10:00:00Z"
+    },
+    {
+      "id": "prod_milk_2l",
+      "businessId": "demo_thabo_corner_store",
+      "name": "Clover Full Cream Fresh Milk 2L",
+      "description": "Homogenised pasteurised fresh dairy milk.",
+      "sku": "CLV-MLK-2L",
+      "category": "Dairy & Eggs",
+      "sellingPrice": 35,
+      "unitCost": 28,
+      "currentQuantity": 6,
+      "lowStockThreshold": 8,
+      "supplier": "Clover Gauteng Direct",
+      "isArchived": false,
+      "createdAt": "2026-09-01T08:00:00Z",
+      "updatedAt": "2026-10-24T07:00:00Z"
+    },
+    {
+      "id": "prod_rice_2kg",
+      "businessId": "demo_thabo_corner_store",
+      "name": "Golden Delight Parboiled Rice 2kg",
+      "description": "Premium easy-cook long grain white rice.",
+      "sku": "GD-RIC-2KG",
+      "category": "Pantry & Groceries",
+      "sellingPrice": 42.5,
+      "unitCost": 32.5,
+      "currentQuantity": 15,
+      "lowStockThreshold": 8,
+      "supplier": "Metro Cash & Carry Devland",
+      "isArchived": false,
+      "createdAt": "2026-09-01T08:00:00Z",
+      "updatedAt": "2026-10-20T12:00:00Z"
+    },
+    {
+      "id": "prod_eggs_30",
+      "businessId": "demo_thabo_corner_store",
+      "name": "Nulaid Large Eggs 30s Tray",
+      "description": "Farm-fresh grade 1 large eggs in recyclable tray.",
+      "sku": "NLD-EGG-30",
+      "category": "Dairy & Eggs",
+      "sellingPrice": 79,
+      "unitCost": 63,
+      "currentQuantity": 7,
+      "lowStockThreshold": 6,
+      "supplier": "Gauteng Egg Wholesalers",
+      "isArchived": false,
+      "createdAt": "2026-09-01T08:00:00Z",
+      "updatedAt": "2026-10-23T11:00:00Z"
+    },
+    {
+      "id": "prod_coke_330ml",
+      "businessId": "demo_thabo_corner_store",
+      "name": "Coca-Cola Original 330ml Can",
+      "description": "Ice-cold carbonated soft drink cans.",
+      "sku": "CC-CAN-330",
+      "category": "Beverages",
+      "sellingPrice": 15,
+      "unitCost": 10.5,
+      "currentQuantity": 42,
+      "lowStockThreshold": 24,
+      "supplier": "Amalgamated Beverage Industries (ABI)",
+      "isArchived": false,
+      "createdAt": "2026-09-01T08:00:00Z",
+      "updatedAt": "2026-10-24T11:00:00Z"
+    },
+    {
+      "id": "prod_airtime_voda",
+      "businessId": "demo_thabo_corner_store",
+      "name": "Vodacom R29 Airtime / Data Voucher",
+      "description": "Prepaid instant airtime printout voucher.",
+      "sku": "VOD-AIR-29",
+      "category": "Airtime & Services",
+      "sellingPrice": 29,
+      "unitCost": 27.2,
+      "currentQuantity": 35,
+      "lowStockThreshold": 15,
+      "supplier": "Kazang Terminal POS",
+      "isArchived": false,
+      "createdAt": "2026-09-01T08:00:00Z",
+      "updatedAt": "2026-10-24T12:00:00Z"
+    },
+    {
+      "id": "prod_sunlight_2kg",
+      "businessId": "demo_thabo_corner_store",
+      "name": "Sunlight 2-in-1 Hand Washing Powder 2kg",
+      "description": "Spring sensations fresh hand washing laundry powder.",
+      "sku": "SNL-WSH-2KG",
+      "category": "Household & Cleaning",
+      "sellingPrice": 66,
+      "unitCost": 51,
+      "currentQuantity": 9,
+      "lowStockThreshold": 8,
+      "supplier": "Metro Cash & Carry Devland",
+      "isArchived": false,
+      "createdAt": "2026-09-01T08:00:00Z",
+      "updatedAt": "2026-10-21T14:00:00Z"
+    }
+  ],
+  "sales": [
+    {
+      "id": "sale_261024_01",
+      "businessId": "demo_thabo_corner_store",
+      "invoiceNumber": "KB-2610-0112",
+      "date": "2026-10-24",
+      "customerId": "cust_mike",
+      "customerName": "Bra Mike Sithole",
+      "customerPhone": "+27 71 884 1928",
+      "items": [
+        {
+          "productId": "prod_bread_white",
+          "productName": "Albany Superior White Bread 700g",
+          "quantity": 2,
+          "unitPrice": 19.5,
+          "unitCost": 15,
+          "total": 39
+        },
+        {
+          "productId": "prod_milk_2l",
+          "productName": "Clover Full Cream Fresh Milk 2L",
+          "quantity": 1,
+          "unitPrice": 35,
+          "unitCost": 28,
+          "total": 35
+        },
+        {
+          "productId": "prod_coke_330ml",
+          "productName": "Coca-Cola Original 330ml Can",
+          "quantity": 2,
+          "unitPrice": 15,
+          "unitCost": 10.5,
+          "total": 30
+        }
+      ],
+      "subtotal": 104,
+      "discount": 0,
+      "total": 104,
+      "paidAmount": 104,
+      "paymentStatus": "paid",
+      "paymentMethod": "cash",
+      "notes": "Morning rush customer",
+      "isVoided": false,
+      "createdAt": "2026-10-24T07:45:00Z",
+      "updatedAt": "2026-10-24T07:45:00Z"
+    },
+    {
+      "id": "sale_261024_02",
+      "businessId": "demo_thabo_corner_store",
+      "invoiceNumber": "KB-2610-0113",
+      "date": "2026-10-24",
+      "customerId": "cust_zodwa",
+      "customerName": "Sis Zodwa Mthembu",
+      "customerPhone": "+27 83 291 4402",
+      "items": [
+        {
+          "productId": "prod_bread_brown",
+          "productName": "Blue Ribbon Brown Bread 700g",
+          "quantity": 1,
+          "unitPrice": 18,
+          "unitCost": 13.8,
+          "total": 18
+        },
+        {
+          "productId": "prod_oil_2l",
+          "productName": "Sunfoil Pure Sunflower Cooking Oil 2L",
+          "quantity": 1,
+          "unitPrice": 69.9,
+          "unitCost": 54,
+          "total": 69.9
+        },
+        {
+          "productId": "prod_airtime_voda",
+          "productName": "Vodacom R29 Airtime / Data Voucher",
+          "quantity": 1,
+          "unitPrice": 29,
+          "unitCost": 27.2,
+          "total": 29
+        }
+      ],
+      "subtotal": 116.9,
+      "discount": 0,
+      "total": 116.9,
+      "paidAmount": 50,
+      "paymentStatus": "partial",
+      "paymentMethod": "cash",
+      "notes": "Paid R50 cash, remaining R66.90 added to book credit till month-end.",
+      "isVoided": false,
+      "createdAt": "2026-10-24T09:20:00Z",
+      "updatedAt": "2026-10-24T09:20:00Z"
+    },
+    {
+      "id": "sale_261024_03",
+      "businessId": "demo_thabo_corner_store",
+      "invoiceNumber": "KB-2610-0114",
+      "date": "2026-10-24",
+      "customerName": "Walk-in Cash Customer",
+      "items": [
+        {
+          "productId": "prod_coke_330ml",
+          "productName": "Coca-Cola Original 330ml Can",
+          "quantity": 4,
+          "unitPrice": 15,
+          "unitCost": 10.5,
+          "total": 60
+        },
+        {
+          "productId": "prod_bread_white",
+          "productName": "Albany Superior White Bread 700g",
+          "quantity": 1,
+          "unitPrice": 19.5,
+          "unitCost": 15,
+          "total": 19.5
+        }
+      ],
+      "subtotal": 79.5,
+      "discount": 0,
+      "total": 79.5,
+      "paidAmount": 79.5,
+      "paymentStatus": "paid",
+      "paymentMethod": "card",
+      "notes": "Yoco card tap payment",
+      "isVoided": false,
+      "createdAt": "2026-10-24T11:10:00Z",
+      "updatedAt": "2026-10-24T11:10:00Z"
+    },
+    {
+      "id": "sale_261023_01",
+      "businessId": "demo_thabo_corner_store",
+      "invoiceNumber": "KB-2610-0108",
+      "date": "2026-10-23",
+      "customerName": "Sipho Dlamini",
+      "items": [
+        {
+          "productId": "prod_oil_2l",
+          "productName": "Sunfoil Pure Sunflower Cooking Oil 2L",
+          "quantity": 2,
+          "unitPrice": 69.9,
+          "unitCost": 54,
+          "total": 139.8
+        },
+        {
+          "productId": "prod_maize_5kg",
+          "productName": "Iwisa Super Maize Meal 5kg",
+          "quantity": 1,
+          "unitPrice": 59,
+          "unitCost": 46.5,
+          "total": 59
+        },
+        {
+          "productId": "prod_eggs_30",
+          "productName": "Nulaid Large Eggs 30s Tray",
+          "quantity": 1,
+          "unitPrice": 79,
+          "unitCost": 63,
+          "total": 79
+        }
+      ],
+      "subtotal": 277.8,
+      "discount": 0,
+      "total": 277.8,
+      "paidAmount": 277.8,
+      "paymentStatus": "paid",
+      "paymentMethod": "eft",
+      "notes": "Instant EFT payment verified on phone",
+      "isVoided": false,
+      "createdAt": "2026-10-23T14:15:00Z",
+      "updatedAt": "2026-10-23T14:15:00Z"
+    },
+    {
+      "id": "sale_261023_02",
+      "businessId": "demo_thabo_corner_store",
+      "invoiceNumber": "KB-2610-0109",
+      "date": "2026-10-23",
+      "customerName": "Street Shopper",
+      "items": [
+        {
+          "productId": "prod_bread_white",
+          "productName": "Albany Superior White Bread 700g",
+          "quantity": 3,
+          "unitPrice": 19.5,
+          "unitCost": 15,
+          "total": 58.5
+        },
+        {
+          "productId": "prod_milk_2l",
+          "productName": "Clover Full Cream Fresh Milk 2L",
+          "quantity": 2,
+          "unitPrice": 35,
+          "unitCost": 28,
+          "total": 70
+        }
+      ],
+      "subtotal": 128.5,
+      "discount": 0,
+      "total": 128.5,
+      "paidAmount": 128.5,
+      "paymentStatus": "paid",
+      "paymentMethod": "cash",
+      "isVoided": false,
+      "createdAt": "2026-10-23T17:30:00Z",
+      "updatedAt": "2026-10-23T17:30:00Z"
+    },
+    {
+      "id": "sale_261023_03",
+      "businessId": "demo_thabo_corner_store",
+      "invoiceNumber": "KB-2610-0110",
+      "date": "2026-10-23",
+      "customerId": "cust_nomsa",
+      "customerName": "Mama Nomsa Khumalo",
+      "items": [
+        {
+          "productId": "prod_maize_5kg",
+          "productName": "Iwisa Super Maize Meal 5kg",
+          "quantity": 3,
+          "unitPrice": 59,
+          "unitCost": 46.5,
+          "total": 177
+        }
+      ],
+      "subtotal": 177,
+      "discount": 0,
+      "total": 177,
+      "paidAmount": 0,
+      "paymentStatus": "unpaid",
+      "paymentMethod": "other",
+      "notes": "Crèche bulk porridge order. Will settle on Monday with government subsidy payout.",
+      "isVoided": false,
+      "createdAt": "2026-10-23T16:00:00Z",
+      "updatedAt": "2026-10-23T16:00:00Z"
+    },
+    {
+      "id": "sale_261022_01",
+      "businessId": "demo_thabo_corner_store",
+      "invoiceNumber": "KB-2610-0105",
+      "date": "2026-10-22",
+      "customerName": "Walk-in Customer",
+      "items": [
+        {
+          "productId": "prod_rice_2kg",
+          "productName": "Golden Delight Parboiled Rice 2kg",
+          "quantity": 2,
+          "unitPrice": 42.5,
+          "unitCost": 32.5,
+          "total": 85
+        },
+        {
+          "productId": "prod_oil_2l",
+          "productName": "Sunfoil Pure Sunflower Cooking Oil 2L",
+          "quantity": 1,
+          "unitPrice": 69.9,
+          "unitCost": 54,
+          "total": 69.9
+        },
+        {
+          "productId": "prod_sunlight_2kg",
+          "productName": "Sunlight 2-in-1 Hand Washing Powder 2kg",
+          "quantity": 1,
+          "unitPrice": 66,
+          "unitCost": 51,
+          "total": 66
+        }
+      ],
+      "subtotal": 220.9,
+      "discount": 0,
+      "total": 220.9,
+      "paidAmount": 220.9,
+      "paymentStatus": "paid",
+      "paymentMethod": "cash",
+      "isVoided": false,
+      "createdAt": "2026-10-22T12:30:00Z",
+      "updatedAt": "2026-10-22T12:30:00Z"
+    },
+    {
+      "id": "sale_261021_01",
+      "businessId": "demo_thabo_corner_store",
+      "invoiceNumber": "KB-2610-0101",
+      "date": "2026-10-21",
+      "customerName": "Local Resident",
+      "items": [
+        {
+          "productId": "prod_bread_white",
+          "productName": "Albany Superior White Bread 700g",
+          "quantity": 4,
+          "unitPrice": 19.5,
+          "unitCost": 15,
+          "total": 78
+        },
+        {
+          "productId": "prod_coke_330ml",
+          "productName": "Coca-Cola Original 330ml Can",
+          "quantity": 6,
+          "unitPrice": 15,
+          "unitCost": 10.5,
+          "total": 90
+        },
+        {
+          "productId": "prod_airtime_voda",
+          "productName": "Vodacom R29 Airtime / Data Voucher",
+          "quantity": 2,
+          "unitPrice": 29,
+          "unitCost": 27.2,
+          "total": 58
+        }
+      ],
+      "subtotal": 226,
+      "discount": 6,
+      "total": 220,
+      "paidAmount": 220,
+      "paymentStatus": "paid",
+      "paymentMethod": "cash",
+      "notes": "Regular discount applied",
+      "isVoided": false,
+      "createdAt": "2026-10-21T18:00:00Z",
+      "updatedAt": "2026-10-21T18:00:00Z"
+    },
+    {
+      "id": "sale_261020_01",
+      "businessId": "demo_thabo_corner_store",
+      "invoiceNumber": "KB-2610-0097",
+      "date": "2026-10-20",
+      "customerName": "Local Taxi Rank driver",
+      "items": [
+        {
+          "productId": "prod_bread_white",
+          "productName": "Albany Superior White Bread 700g",
+          "quantity": 2,
+          "unitPrice": 19.5,
+          "unitCost": 15,
+          "total": 39
+        },
+        {
+          "productId": "prod_coke_330ml",
+          "productName": "Coca-Cola Original 330ml Can",
+          "quantity": 5,
+          "unitPrice": 15,
+          "unitCost": 10.5,
+          "total": 75
+        }
+      ],
+      "subtotal": 114,
+      "discount": 0,
+      "total": 114,
+      "paidAmount": 114,
+      "paymentStatus": "paid",
+      "paymentMethod": "cash",
+      "isVoided": false,
+      "createdAt": "2026-10-20T15:20:00Z",
+      "updatedAt": "2026-10-20T15:20:00Z"
+    },
+    {
+      "id": "sale_261019_01",
+      "businessId": "demo_thabo_corner_store",
+      "invoiceNumber": "KB-2610-0094",
+      "date": "2026-10-19",
+      "customerName": "Orlando High School Teacher",
+      "items": [
+        {
+          "productId": "prod_eggs_30",
+          "productName": "Nulaid Large Eggs 30s Tray",
+          "quantity": 2,
+          "unitPrice": 79,
+          "unitCost": 63,
+          "total": 158
+        },
+        {
+          "productId": "prod_bread_brown",
+          "productName": "Blue Ribbon Brown Bread 700g",
+          "quantity": 2,
+          "unitPrice": 18,
+          "unitCost": 13.8,
+          "total": 36
+        },
+        {
+          "productId": "prod_milk_2l",
+          "productName": "Clover Full Cream Fresh Milk 2L",
+          "quantity": 2,
+          "unitPrice": 35,
+          "unitCost": 28,
+          "total": 70
+        }
+      ],
+      "subtotal": 264,
+      "discount": 0,
+      "total": 264,
+      "paidAmount": 264,
+      "paymentStatus": "paid",
+      "paymentMethod": "card",
+      "isVoided": false,
+      "createdAt": "2026-10-19T16:45:00Z",
+      "updatedAt": "2026-10-19T16:45:00Z"
+    },
+    {
+      "id": "sale_261018_01",
+      "businessId": "demo_thabo_corner_store",
+      "invoiceNumber": "KB-2610-0089",
+      "date": "2026-10-18",
+      "customerName": "Sunday Church Member",
+      "items": [
+        {
+          "productId": "prod_rice_2kg",
+          "productName": "Golden Delight Parboiled Rice 2kg",
+          "quantity": 3,
+          "unitPrice": 42.5,
+          "unitCost": 32.5,
+          "total": 127.5
+        },
+        {
+          "productId": "prod_oil_2l",
+          "productName": "Sunfoil Pure Sunflower Cooking Oil 2L",
+          "quantity": 2,
+          "unitPrice": 69.9,
+          "unitCost": 54,
+          "total": 139.8
+        },
+        {
+          "productId": "prod_coke_330ml",
+          "productName": "Coca-Cola Original 330ml Can",
+          "quantity": 6,
+          "unitPrice": 15,
+          "unitCost": 10.5,
+          "total": 90
+        }
+      ],
+      "subtotal": 357.3,
+      "discount": 0,
+      "total": 357.3,
+      "paidAmount": 357.3,
+      "paymentStatus": "paid",
+      "paymentMethod": "cash",
+      "isVoided": false,
+      "createdAt": "2026-10-18T13:00:00Z",
+      "updatedAt": "2026-10-18T13:00:00Z"
+    },
+    {
+      "id": "sale_261015_01",
+      "businessId": "demo_thabo_corner_store",
+      "invoiceNumber": "KB-2610-0075",
+      "date": "2026-10-15",
+      "customerName": "Local Customer",
+      "items": [
+        {
+          "productId": "prod_maize_5kg",
+          "productName": "Iwisa Super Maize Meal 5kg",
+          "quantity": 2,
+          "unitPrice": 59,
+          "unitCost": 46.5,
+          "total": 118
+        },
+        {
+          "productId": "prod_bread_white",
+          "productName": "Albany Superior White Bread 700g",
+          "quantity": 2,
+          "unitPrice": 19.5,
+          "unitCost": 15,
+          "total": 39
+        }
+      ],
+      "subtotal": 157,
+      "discount": 0,
+      "total": 157,
+      "paidAmount": 157,
+      "paymentStatus": "paid",
+      "paymentMethod": "cash",
+      "isVoided": false,
+      "createdAt": "2026-10-15T10:00:00Z",
+      "updatedAt": "2026-10-15T10:00:00Z"
+    },
+    {
+      "id": "sale_261012_01",
+      "businessId": "demo_thabo_corner_store",
+      "invoiceNumber": "KB-2610-0062",
+      "date": "2026-10-12",
+      "customerName": "Tuckshop Reseller",
+      "items": [
+        {
+          "productId": "prod_coke_330ml",
+          "productName": "Coca-Cola Original 330ml Can",
+          "quantity": 12,
+          "unitPrice": 15,
+          "unitCost": 10.5,
+          "total": 180
+        },
+        {
+          "productId": "prod_airtime_voda",
+          "productName": "Vodacom R29 Airtime / Data Voucher",
+          "quantity": 5,
+          "unitPrice": 29,
+          "unitCost": 27.2,
+          "total": 145
+        }
+      ],
+      "subtotal": 325,
+      "discount": 0,
+      "total": 325,
+      "paidAmount": 325,
+      "paymentStatus": "paid",
+      "paymentMethod": "eft",
+      "isVoided": false,
+      "createdAt": "2026-10-12T11:45:00Z",
+      "updatedAt": "2026-10-12T11:45:00Z"
+    },
+    {
+      "id": "sale_261008_01",
+      "businessId": "demo_thabo_corner_store",
+      "invoiceNumber": "KB-2610-0044",
+      "date": "2026-10-08",
+      "customerName": "Corner Store Customer",
+      "items": [
+        {
+          "productId": "prod_oil_2l",
+          "productName": "Sunfoil Pure Sunflower Cooking Oil 2L",
+          "quantity": 2,
+          "unitPrice": 69.9,
+          "unitCost": 54,
+          "total": 139.8
+        },
+        {
+          "productId": "prod_rice_2kg",
+          "productName": "Golden Delight Parboiled Rice 2kg",
+          "quantity": 2,
+          "unitPrice": 42.5,
+          "unitCost": 32.5,
+          "total": 85
+        }
+      ],
+      "subtotal": 224.8,
+      "discount": 0,
+      "total": 224.8,
+      "paidAmount": 224.8,
+      "paymentStatus": "paid",
+      "paymentMethod": "cash",
+      "isVoided": false,
+      "createdAt": "2026-10-08T15:00:00Z",
+      "updatedAt": "2026-10-08T15:00:00Z"
+    },
+    {
+      "id": "sale_261003_01",
+      "businessId": "demo_thabo_corner_store",
+      "invoiceNumber": "KB-2610-0021",
+      "date": "2026-10-03",
+      "customerName": "Month-start Family Grocery",
+      "items": [
+        {
+          "productId": "prod_maize_5kg",
+          "productName": "Iwisa Super Maize Meal 5kg",
+          "quantity": 4,
+          "unitPrice": 59,
+          "unitCost": 46.5,
+          "total": 236
+        },
+        {
+          "productId": "prod_oil_2l",
+          "productName": "Sunfoil Pure Sunflower Cooking Oil 2L",
+          "quantity": 3,
+          "unitPrice": 69.9,
+          "unitCost": 54,
+          "total": 209.7
+        },
+        {
+          "productId": "prod_sunlight_2kg",
+          "productName": "Sunlight 2-in-1 Hand Washing Powder 2kg",
+          "quantity": 2,
+          "unitPrice": 66,
+          "unitCost": 51,
+          "total": 132
+        },
+        {
+          "productId": "prod_eggs_30",
+          "productName": "Nulaid Large Eggs 30s Tray",
+          "quantity": 2,
+          "unitPrice": 79,
+          "unitCost": 63,
+          "total": 158
+        }
+      ],
+      "subtotal": 735.7,
+      "discount": 15.7,
+      "total": 720,
+      "paidAmount": 720,
+      "paymentStatus": "paid",
+      "paymentMethod": "cash",
+      "notes": "Bulk family monthly supplies",
+      "isVoided": false,
+      "createdAt": "2026-10-03T11:00:00Z",
+      "updatedAt": "2026-10-03T11:00:00Z"
+    }
+  ],
+  "expenses": [
+    {
+      "id": "exp_261024_01",
+      "businessId": "demo_thabo_corner_store",
+      "description": "Daily fresh Albany and Blue Ribbon bread delivery cash settlement",
+      "amount": 145,
+      "category": "Stock purchases",
+      "date": "2026-10-24",
+      "paymentMethod": "cash",
+      "supplier": "Albany Meadowlands Depot",
+      "notes": "Paid driver on morning delivery",
+      "isVoided": false,
+      "createdAt": "2026-10-24T06:45:00Z"
+    },
+    {
+      "id": "exp_261022_01",
+      "businessId": "demo_thabo_corner_store",
+      "description": "Eskom prepaid electricity voucher (Units for cold drinks fridge)",
+      "amount": 250,
+      "category": "Electricity & utilities",
+      "date": "2026-10-22",
+      "paymentMethod": "cash",
+      "supplier": "Eskom Prepaid / Flash",
+      "notes": "Token: 4891-2309-8472-1092",
+      "isVoided": false,
+      "createdAt": "2026-10-22T08:15:00Z"
+    },
+    {
+      "id": "exp_261020_01",
+      "businessId": "demo_thabo_corner_store",
+      "description": "Metro Cash & Carry Devland weekly grocery replenishment",
+      "amount": 1850,
+      "category": "Stock purchases",
+      "date": "2026-10-20",
+      "paymentMethod": "eft",
+      "supplier": "Metro Cash & Carry Devland",
+      "notes": "Restocked cooking oil, maize meal, sugar, cold drink cans",
+      "isVoided": false,
+      "createdAt": "2026-10-20T11:00:00Z"
+    },
+    {
+      "id": "exp_261020_02",
+      "businessId": "demo_thabo_corner_store",
+      "description": "Bakkie / transport hire for stock haulage from Metro Cash & Carry",
+      "amount": 220,
+      "category": "Transport",
+      "date": "2026-10-20",
+      "paymentMethod": "cash",
+      "supplier": "Bra Sipho Transport Services",
+      "notes": "Transported 20 boxes to shop",
+      "isVoided": false,
+      "createdAt": "2026-10-20T12:30:00Z"
+    },
+    {
+      "id": "exp_261015_01",
+      "businessId": "demo_thabo_corner_store",
+      "description": "Telkom LTE 50GB Shop Router Data bundle",
+      "amount": 199,
+      "category": "Data & connectivity",
+      "date": "2026-10-15",
+      "paymentMethod": "card",
+      "supplier": "Telkom Business",
+      "notes": "For Yoco card machine and shop WiFi",
+      "isVoided": false,
+      "createdAt": "2026-10-15T09:00:00Z"
+    },
+    {
+      "id": "exp_261001_01",
+      "businessId": "demo_thabo_corner_store",
+      "description": "Shop container monthly rental to stand owner",
+      "amount": 1500,
+      "category": "Rent",
+      "date": "2026-10-01",
+      "paymentMethod": "eft",
+      "supplier": "Mr. V. Mokoena (Stand Owner)",
+      "notes": "October 2026 rent",
+      "isVoided": false,
+      "createdAt": "2026-10-01T08:00:00Z"
+    },
+    {
+      "id": "exp_261005_01",
+      "businessId": "demo_thabo_corner_store",
+      "description": "Plastic packaging carrier bags (Roll of 500 white carry bags)",
+      "amount": 85,
+      "category": "Packaging",
+      "date": "2026-10-05",
+      "paymentMethod": "cash",
+      "supplier": "Soweto Plastics Wholesalers",
+      "isVoided": false,
+      "createdAt": "2026-10-05T14:00:00Z"
+    }
+  ],
+  "customers": [
+    {
+      "id": "cust_zodwa",
+      "businessId": "demo_thabo_corner_store",
+      "name": "Sis Zodwa Mthembu",
+      "phone": "+27 83 291 4402",
+      "email": "",
+      "notes": "Regular local customer, pays monthly account on the 25th after SASSA grant.",
+      "outstandingBalance": 124,
+      "createdAt": "2026-09-05T10:00:00Z"
+    },
+    {
+      "id": "cust_mike",
+      "businessId": "demo_thabo_corner_store",
+      "name": "Bra Mike Sithole",
+      "phone": "+27 71 884 1928",
+      "email": "mikesithole@gmail.com",
+      "notes": "Local taxi owner on the Baragwanath route. Buys drinks and airtime.",
+      "outstandingBalance": 0,
+      "createdAt": "2026-09-08T14:30:00Z"
+    },
+    {
+      "id": "cust_nomsa",
+      "businessId": "demo_thabo_corner_store",
+      "name": "Mama Nomsa Khumalo",
+      "phone": "+27 82 550 3119",
+      "email": "",
+      "notes": "Runs the local crèche next door, places weekly grocery orders for kids porridge and milk.",
+      "outstandingBalance": 177,
+      "createdAt": "2026-09-12T09:15:00Z"
+    },
+    {
+      "id": "cust_sipho",
+      "businessId": "demo_thabo_corner_store",
+      "name": "Sipho Dlamini",
+      "phone": "+27 76 342 9012",
+      "email": "sipho.d@outlook.com",
+      "notes": "Youth entrepreneur running cellphone repairs down the road.",
+      "outstandingBalance": 0,
+      "createdAt": "2026-09-18T16:00:00Z"
+    }
+  ],
+  "orders": [
+    {
+      "id": "ord_261024_01",
+      "businessId": "demo_thabo_corner_store",
+      "orderNumber": "ORD-2610-001",
+      "customerId": "cust_nomsa",
+      "customerName": "Mama Nomsa Khumalo",
+      "customerPhone": "+27 82 550 3119",
+      "items": [
+        {
+          "productId": "prod_maize_5kg",
+          "productName": "Iwisa Super Maize Meal 5kg",
+          "quantity": 3,
+          "unitPrice": 59,
+          "total": 177
+        },
+        {
+          "productId": "prod_milk_2l",
+          "productName": "Clover Full Cream Fresh Milk 2L",
+          "quantity": 2,
+          "unitPrice": 35,
+          "total": 70
+        }
+      ],
+      "total": 247,
+      "status": "confirmed",
+      "paymentStatus": "unpaid",
+      "deliveryNotes": "Please keep behind counter for crèche collection at 14:00.",
+      "orderDate": "2026-10-24",
+      "createdAt": "2026-10-24T08:30:00Z"
+    },
+    {
+      "id": "ord_261023_01",
+      "businessId": "demo_thabo_corner_store",
+      "orderNumber": "ORD-2610-002",
+      "customerName": "Pastor Ndlovu (Grace Fellowship)",
+      "customerPhone": "+27 84 901 3341",
+      "items": [
+        {
+          "productId": "prod_rice_2kg",
+          "productName": "Golden Delight Parboiled Rice 2kg",
+          "quantity": 4,
+          "unitPrice": 42.5,
+          "total": 170
+        },
+        {
+          "productId": "prod_oil_2l",
+          "productName": "Sunfoil Pure Sunflower Cooking Oil 2L",
+          "quantity": 2,
+          "unitPrice": 69.9,
+          "total": 139.8
+        },
+        {
+          "productId": "prod_coke_330ml",
+          "productName": "Coca-Cola Original 330ml Can",
+          "quantity": 12,
+          "unitPrice": 15,
+          "total": 180
+        }
+      ],
+      "total": 489.8,
+      "status": "in_progress",
+      "paymentStatus": "paid",
+      "deliveryNotes": "Sunday youth service catering. Paid full amount via EFT.",
+      "orderDate": "2026-10-23",
+      "createdAt": "2026-10-23T15:00:00Z"
+    }
+  ],
+  "stockMovements": [
+    {
+      "id": "sm_01",
+      "businessId": "demo_thabo_corner_store",
+      "productId": "prod_oil_2l",
+      "productName": "Sunfoil Pure Sunflower Cooking Oil 2L",
+      "type": "sale",
+      "quantityChange": -1,
+      "previousQuantity": 5,
+      "newQuantity": 4,
+      "reason": "Customer sale KB-2610-0113",
+      "createdAt": "2026-10-24T09:20:00Z"
+    },
+    {
+      "id": "sm_02",
+      "businessId": "demo_thabo_corner_store",
+      "productId": "prod_milk_2l",
+      "productName": "Clover Full Cream Fresh Milk 2L",
+      "type": "sale",
+      "quantityChange": -1,
+      "previousQuantity": 7,
+      "newQuantity": 6,
+      "reason": "Customer sale KB-2610-0112",
+      "createdAt": "2026-10-24T07:45:00Z"
+    },
+    {
+      "id": "sm_03",
+      "businessId": "demo_thabo_corner_store",
+      "productId": "prod_bread_white",
+      "productName": "Albany Superior White Bread 700g",
+      "type": "restock",
+      "quantityChange": 15,
+      "previousQuantity": 2,
+      "newQuantity": 17,
+      "reason": "Daily bakery replenishment delivery",
+      "createdAt": "2026-10-24T06:30:00Z"
+    },
+    {
+      "id": "sm_04",
+      "businessId": "demo_thabo_corner_store",
+      "productId": "prod_oil_2l",
+      "productName": "Sunfoil Pure Sunflower Cooking Oil 2L",
+      "type": "restock",
+      "quantityChange": 12,
+      "previousQuantity": 1,
+      "newQuantity": 13,
+      "reason": "Metro Cash & Carry wholesale trip",
+      "createdAt": "2026-10-20T12:00:00Z"
+    }
+  ],
+  "goals": [
+    {
+      "id": "goal_01",
+      "businessId": "demo_thabo_corner_store",
+      "title": "Maintain Minimum Cash Runway Buffer of R5,000",
+      "category": "funding",
+      "targetDescription": "Ensure the shop keeps at least R5,000 cash in reserve to restock staples without taking high-interest supplier debt.",
+      "targetValue": 5000,
+      "currentValue": 4780,
+      "isCompleted": false,
+      "createdAt": "2026-09-01T00:00:00Z"
+    },
+    {
+      "id": "goal_02",
+      "businessId": "demo_thabo_corner_store",
+      "title": "Zero Stockouts on Top 3 High-Turnover Staples",
+      "category": "stock",
+      "targetDescription": "Never run out of Albany bread, cooking oil, and 5kg maize meal during weekend peak periods.",
+      "targetValue": 0,
+      "currentValue": 1,
+      "isCompleted": false,
+      "createdAt": "2026-09-01T00:00:00Z"
+    },
+    {
+      "id": "goal_03",
+      "businessId": "demo_thabo_corner_store",
+      "title": "Qualify for Formal Township Supplier Credit & FNB Small Business Account",
+      "category": "records",
+      "targetDescription": "Maintain 90 consecutive days of verifiable sales, digital receipts, and expense reconciliation.",
+      "targetValue": 90,
+      "currentValue": 54,
+      "isCompleted": false,
+      "createdAt": "2026-09-01T00:00:00Z"
+    }
+  ],
+  "growthActions": [
+    {
+      "id": "act_01",
+      "businessId": "demo_thabo_corner_store",
+      "goalId": "goal_02",
+      "title": "Order 12 units of Sunfoil Cooking Oil 2L before Friday 14:00",
+      "description": "Current stock is 4 bottles. At current sales rate (2.2 bottles/day), oil will run dry by Saturday midday.",
+      "category": "Stock & Suppliers",
+      "priority": "high",
+      "isCompleted": false,
+      "createdAt": "2026-10-24T08:00:00Z"
+    },
+    {
+      "id": "act_02",
+      "businessId": "demo_thabo_corner_store",
+      "goalId": "goal_01",
+      "title": "Collect outstanding R124.00 customer SASSA book balances",
+      "description": "Send courteous WhatsApp reminders to Sis Zodwa and Mama Nomsa ahead of month-end grants.",
+      "category": "Cash Flow",
+      "priority": "high",
+      "isCompleted": false,
+      "createdAt": "2026-10-23T10:00:00Z"
+    },
+    {
+      "id": "act_03",
+      "businessId": "demo_thabo_corner_store",
+      "goalId": "goal_03",
+      "title": "Export Monthly Statement PDF for Landlord lease renewal",
+      "description": "Compile verified gross profit and turnover record to demonstrate business viability.",
+      "category": "Compliance & Growth",
+      "priority": "medium",
+      "isCompleted": false,
+      "createdAt": "2026-10-21T12:00:00Z"
+    },
+    {
+      "id": "act_04",
+      "businessId": "demo_thabo_corner_store",
+      "goalId": "goal_03",
+      "title": "Separate personal airtime purchases from shop inventory",
+      "description": "Ensure family mobile vouchers are logged as explicit personal draws rather than unaccounted shrink.",
+      "category": "Record Keeping",
+      "priority": "medium",
+      "isCompleted": true,
+      "createdAt": "2026-10-15T09:00:00Z"
+    }
+  ],
+  "auditLogs": [
+    {
+      "id": "audit_01",
+      "businessId": "demo_thabo_corner_store",
+      "action": "SALE_RECORDED",
+      "entityType": "sale",
+      "entityId": "sale_261024_03",
+      "details": "Recorded sale KB-2610-0114 for R 79.50 (Card payment)",
+      "timestamp": "2026-10-24T11:10:00Z"
+    },
+    {
+      "id": "audit_02",
+      "businessId": "demo_thabo_corner_store",
+      "action": "STOCK_DECREMENTED",
+      "entityType": "stock",
+      "entityId": "prod_oil_2l",
+      "details": "Decreased stock of Sunfoil 2L by 1 unit (KB-2610-0113)",
+      "timestamp": "2026-10-24T09:20:00Z"
+    },
+    {
+      "id": "audit_03",
+      "businessId": "demo_thabo_corner_store",
+      "action": "EXPENSE_RECORDED",
+      "entityType": "expense",
+      "entityId": "exp_261024_01",
+      "details": "Recorded stock purchase expense of R 145.00 to Albany Meadowlands",
+      "timestamp": "2026-10-24T06:45:00Z"
+    },
+    {
+      "id": "audit_04",
+      "businessId": "demo_thabo_corner_store",
+      "action": "DEMO_INITIALIZED",
+      "entityType": "business",
+      "entityId": "demo_thabo_corner_store",
+      "details": "System loaded pristine FNB Hackathon 2026 benchmark dataset for Thabo's Corner Store",
+      "timestamp": "2026-10-24T06:00:00Z"
+    }
+  ]
+}
